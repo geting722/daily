@@ -26,7 +26,8 @@ Sample Output
 2
 
 思路：next1数组存的是前后缀相同的长度,中间不可重叠。
-开始想的是在next1[len]---len-next1[len]这段区间找个最大值然后与最小值比较
+开始想的是在next1[len]---len-next1[len]这段区间找个最大值然后与next1[len]的较小值，
+最后还是在[2*i，L-Next[i]]这段区间找的。
 */
 ```
 #include <bits/stdc++.h>
