@@ -25,7 +25,8 @@ Sample Output
 2
 2
 
-思路：next1数组存的是前后缀相同的长度,中间不可重叠，
+思路：next1数组存的是前后缀相同的长度,中间不可重叠。
+开始想的是在next1[len]---len-next1[len]这段区间找个最大值然后与最小值比较
 */
 ```
 #include <bits/stdc++.h>
