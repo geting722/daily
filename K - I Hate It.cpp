@@ -124,6 +124,34 @@ int main()
 			scanf("%d",s+i);
 		}
 		build(1,n,1);
+		
+		while(m--)
+		{
+			char ch;
+			int b,c;
+			getchar();
+			scanf("%c%d%d",&ch,&b,&c);
+			if(ch=='Q')printf("%d\n",query(b,c,1,n,1));
+			else update(b,c,1,n,1);
+			
+		}
+
+	}
+
+	return 0;
+}
+
+
+int main()
+{
+	int n,m;
+	while(scanf("%d%d",&n,&m)!=EOF)
+	{
+		for(int i=1; i<=n; i++)
+		{
+			scanf("%d",s+i);
+		}
+		build(1,n,1);
 		getchar();
 		while(m--)
 		{
